@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://mbuy.ebay.com/xo?action=view&sessionid=532878511011&redirect=mobile -->
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+      <script src="angularjs/angular_ebay.js"></script>
+      <link rel="icon" href="https://pages.ebay.com/favicon.ico">
+      <link rel="dns-prefetch" href="https://ir.ebaystatic.com/">
+      <link rel="dns-prefetch" href="https://secureir.ebaystatic.com/">
+      <link rel="dns-prefetch" href="https://i.ebayimg.com/">
+      <link rel="dns-prefetch" href="https://rover.ebay.com/">
+     
+      <meta name="viewport" content="width=device-width">
+      <meta name="format-detection" content="telephone=no">
+      <title>Checkout</title>
+      <link rel="stylesheet" type="text/css" href="./images/tploy3gdkq1d1jenn45ttxfrlid.css">
+      <script>$ssgST=new Date().getTime();</script>
+      <link rel="stylesheet" href="./images/desktop-a833d0.css">
+   </head>
+   <body class="xo desktop" ng-app="ebay" ng-controller="ebay_checkout" ng-init="checkout()">
+      <div class="global-header">
+         <div class="v-align2col ghCtr">
+            <div class="gh-acc-exp-div gh-hide-if-nocss"><a id="gh-hdn-stm" class="gh-acc-a" href="https://mbuy.ebay.com/xo?action=view&amp;sessionid=532878511011&amp;redirect=mobile#mainContent">Skip to main content</a></div>
+               <header id="gh" role="banner" class="gh-flex gh-pre-js gh-w gh-minH ">
+                  <table class="gh-tbl">
+                     <tbody>
+                        <tr>
+                           <td class="gh-td">
+                            <a href="http://www.ebay.com/" _sp="m570.l2586" id="gh-la">eBay<img role="presentation" width="250" height="200" style="clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0" alt="" src="./images/fxxj3ttftm5ltcqnto1o4baovyl.png" id="gh-logo"></a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                 </header> 
+         </div>
+         <!-- <div class="v-align2col surveyCtr">
+            <div id="survey" data-module-id="4276" class="mb15"><span>How do you like our checkout?</span><br><a id="surveylink" class="survey-link" data-click-id="7743" href="javascript:;" data-url="https://connect.ebay.com/srv/survey/a/cxo.ryp?ctx=uid%3Dkemhalan-0%26sessionid%3D532878511011%26profile%3DWEB&amp;title=0&amp;close=-1">Tell us what you think</a></div>
+         </div> -->
+      </div>
+      <h1 class="page-title">Checkout</h1>
+      <form>
+         <input type="hidden" name="srt" value="010001000000505ecbac3da933419db2b7543c068236f354da169a39c92178b8d12629cf0ee228f20c9e81bc7ed3440a773660654e1f992dcc2808c31749adee188704e66d9646e774f7ffcc284ed5578b7ebc154f0e84">
+         <div id="mainContent" tabindex="-1" role="main" class="row">
+            <div class="left-section col-xs-8">
+               <div id="alert-page" class="xo-alert skin-large" aria-live="polite"></div>
+               <div id="payment-methods-ctr" class="top-lvl-module" data-module-id="4065">
+                  <h2 class="section-title">Pay with</h2>
+                  <div class="pmt-mthds module">
+                     <div class="pmt-mthd pmt-disabled  last" data-action-type="expandPaymentDisabled" data-module-id="4065" data-click-id="7304">
+                           <div class="pmt-mthd-l v-align2col">
+                              <div class="rdo-col v-align2col"><span class="custom-ctr custom-rb disabled"></span></div>
+                              <span class="text-opacity">Enter card details</span></label><br><br>
+                           </div>
+
+                           <div style="width:900px;">Card number : <input type="text" ng-model ="enumber" placeholder="Enter card number"></div><br>
+                           <div style="width:900px;">Expiration Date : <input type="number" ng-model ="emonth" min="1" max ="12" placeholder="mm"><input type="number" ng-model ="eyear" min="2016" max ="9999" placeholder="yyyy"> </div><br>
+                           <div style="width:900px;">CVV : <input type="password" ng-model ="ecvv" placeholder="Enter cvv"></div><br>
+                           <div style="width:900px;"><input type="submit" ng-click="validate();"></div>
+
+                           
+                           
+                        </div>
+                  </div>
+                 
+               </div>
+               <div id="shipping-address-ctr" class="top-lvl-module" data-module-id="4049">
+                  <h2 class="section-title">Ship to</h2>
+                  <div class="shipping-address module " data-async-type="getAddresses" data-address-id="4719500451016" data-click-id="7250">
+                     <div class="main-sa-info v-align2col">
+                        <div>
+                           <div>Aditya&nbsp;Chauhan </div> <div>Krishna-2</div> <div>Ahmedabad&nbsp;India, 380005</div> 
+                           
+                           
+                        </div>
+                        <div id="sa-change-link"><a href="javascript:;" role="button" aria-label="Change shipping address">Change</a></div>
+                     </div>
+                     <div class="sa-edit v-align2col"><button type="button" class="sa-edit-btn img-btn" aria-label="View ship to addresses" aria-controls="shipping-addresses" aria-expanded="false"><span class="arrow-expand sa-edit-arrow icon-chevron-down"></span></button></div>
+                  </div>
+                  
+               </div>
+               <div id="cart-details-ctr" class="top-lvl-module" data-module-id="4066">
+                  <h2 class="section-title">Review items and shipping</h2>
+                  <div ng-repeat = "items in checkout">
+                  <div class="seller-row row" id="s_0" data-sellerid="a-depot">
+                     <div class="seller-bucket-container module">
+                        <div id="seller-info" class="seller-info clearfix">
+                           <div class="seller-name"><span title="Seller:  a-depot"><span class="lbl">Seller: </span>{{items.fname}}&nbsp;{{items.lname}}</span></div>
+                           
+                        </div>
+                        <div id="seller-message-ctr" class="seller-message-ctr">
+                           
+                        </div>
+                        <div class="seller-item-group" data-lineitemid="BId-ItemId=401180642201;EId-VariationId=670747031903;Domain-ebay;LId-25233829632" data-skuid="ROCK-IP7P-ROYCE-GD-A029-37285">
+                           <div class="item-row" data-itemid="401180642201">
+                              <div class="d-table">
+                                 <div class="item-img-ctr">
+                                    <div class="item-image"><span class="img-ctr"><img border="0" class="img" title="For Apple iPhone 7 / 7 Plus Slim Shockproof Hybrid Hard Bumper Soft Rubber Case" alt="For Apple iPhone 7 / 7 Plus Slim Shockproof Hybrid Hard Bumper Soft Rubber Case" src="./images/homepage.jpg" atf="true" data-event-type="onImageLoad"></span></div>
+                                 </div>
+                                 <div class="item-info-section d-tcell">
+                                    <div class="row item-details">
+                                       <div class="col-xs-9 item-title">
+                                          {{items.name}}
+                                          <div class="var-details">Description: {{items.description}}</div>
+                                       </div>
+                                       <div class="item-price col-xs-3"><span>${{items.price}}</span></div>
+                                       <div class="item-additional-price col-xs-3"></div>
+                                    </div>
+                                    <div class="qty2">
+                                       <div class="xo-item-qty form form--small">
+                                          <label>Qty: </label><span>{{items.cart_quantity}}</span>
+                                          <span><a href="javascript:;" data-lineitemid="BId-ItemId=401180642201;EId-VariationId=670747031903;Domain-ebay;LId-25233829632" class="hide" role="button" data-async-type="updateQuantity" data-click-id="7317">Update</a></span>
+                                       </div>
+                                    </div>
+                                    <div class="item-shipping clearfix">
+                                       <fieldset>
+                                          <legend>Select a shipping service for For Apple iPhone 7 / 7 Plus Slim Shockproof Hybrid Hard Bumper Soft Rubber Case</legend>
+                                          <div class="row">
+                                             <div class="col-xs-9 shp-row">
+                                               
+                                                <label class="lbl v-align2col"><span class="ship-serv">Standard Shipping<span class="ship-opt">&nbsp;-&nbsp;<span>Free</span></span></span><br><span class="shipping-info"></span></label>
+                                             </div>
+                                             <div class="col-xs-3 ship-price show"><span>Free</span></div>
+                                          </div>
+                                          
+                                       </fieldset>
+                                    </div>
+                                   
+                                 </div>
+                                 <div class="remove-item-ctr d-tcell"><a title="Remove item For Apple iPhone 7 / 7 Plus Slim Shockproof Hybrid Hard Bumper Soft Rubber Case" class="item-action remove-icon" role="button" data-click-id="7313" data-async-type="removeItem" data-item-quantity="3"></a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="promo"><span class="msg-color" style="padding: 130px">Total: </span><span style="padding: 195px">${{total}}</span></div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+               
+               
+                  
+            </div>
+            <div class="right-rail col-xs-4 right-rail-toppadding">
+               <div class="right-rail-content">
+                  <div>
+                     <div id="cart-summary-ctr" data-module-id="4067" data-disabled-cta-msg="{&quot;ADD_ADDRESS&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Add your shipping details and click Add&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;},&quot;ADD_CARD&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Add your credit or debit card details and click Done. You will be able to review this information before payment is submitted.&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;},&quot;PAYPAL_VALIDATION&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Log in to PayPal or PayPal Credit to use gift cards, coupons, or eBay Bucks&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;},&quot;NO_PAYMENT_METHOD&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Select a payment option&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;},&quot;EDIT_CARD&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Update your credit or debit card details and click Done. You will be able to review this information before payment is submitted.&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;},&quot;EDIT_ADDRESS&quot;:{&quot;model&quot;:{&quot;errors&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;title&quot;:&quot;Update your shipping details and click Save&quot;,&quot;htmlTitle&quot;:false,&quot;id&quot;:0}]},&quot;className&quot;:&quot;page-alert--high&quot;,&quot;ariaLabel&quot;:&quot;High Priority&quot;}}">
+                        <h2 class="section-title access-aid">Cart Summary</h2>
+                        <div id="cart-details" class="row">
+                           <table class="w100p">
+                              <tbody>
+                                 <tr class="hide">
+                                    <th>Label</th>
+                                    <th>Value</th>
+                                 </tr>
+                                 <tr>
+                                    <td class="l-align pb10">Items</td>
+                                    <td class="pb10"><span>${{total}}</span></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="l-align pb10">Shipping</td>
+                                    <td class="pb10"><span>Free</span></td>
+                                 </tr>
+                                 
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="cart-order">
+                           <div id="cart-total" class="row">
+                              <table class="w100p">
+                                 <tbody>
+                                    <tr class="hide">
+                                       <th>label</th>
+                                       <th>value</th>
+                                    </tr>
+                                    <tr data-type="TOTAL">
+                                       <td class="l-align">Order total</td>
+                                       <td class="bold nowrap"><span>${{total}}</span></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div id="call-to-action"><button type="submit" id="cta-btn" class="btn btn--primary xo-btn" data-click-id="7707" data-disabled-click-id="8104" data-disabled="false" aria-disabled="false" ng-click="pay()">Confirm and pay</button><input type="hidden" id="ctaState" name="ctaState" value="false"></div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+         
+      </form>
+      
+        
+      </div>
+      <div id="pg-mask" class="oly-m fade"></div>
+      <div aria-live="polite">
+         <div class="overlay-left tooltip" id="xo-tooltip" style="display: none;"></div>
+      </div>
+      <div class="gh-footer-a11y hide" aria-hidden="true" data-a11y-new-tab="opens in new window or tab"></div>
+   </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sign in or Register | eBay</title>
+      <link rel="canonical" href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel='stylesheet' href='/stylesheets/signin.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+      <script src="angularjs/angular_ebay.js"></script>
+   
+   </head>
+   <body class="sz980 sso ssous" ng-app="ebay" ng-controller="ebay">
+      <div id="kgdiv">
+         <div>
+            <span id="flashkrb">
+               <param name="wmode" value="transparent">
+            </span>
+         </div>
+      </div>
+      <script src="./images/roverlv.js.download" type="text/javascript"></script>
+      <div class="pagewidth">
+         <div class="pageminwidth">
+            <div class="pagelayout">
+               <div class="pagecontainer">
+                  <div class="GlobalNavigation" id="GlobalNavigation">
+                     <header id="gh" role="banner" class="gh-flex gh-pre-js gh-w gh-minH ">
+                        <table class="gh-tbl">
+                           <tbody>
+                              <tr>
+                                 <td class="gh-td"><a href="http://www.ebay.com/" _sp="m570.l2586" id="gh-la">eBay<img role="presentation" width="250" height="200" style="clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0" alt="" src="./images/fxxj3ttftm5ltcqnto1o4baovyl.png" id="gh-logo"></a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </header>
+                  </div>
+               </div>
+               <div id="mainCnt" class="bdcnt">
+                  <div id="ttl" role="tablist" class="ttl">
+                     <a href="javascript:;" style="cursor: inherit;" id="rvan" role="tab" tabindex="-1" aria-expanded="true">
+                        <div id="sgnTab" role="tab" class="sgnt" tabindex="0" aria-expanded="true"><span class="sp spr ar" id="sar"></span><span class="ml53 tx">Sign in</span></div>
+                     </a>
+                     <span class="shd" id="shd" style="left:3%"></span>
+                     <a href="/register" role="tab" id="rvan2" tabindex="-1" aria-expanded="false">
+                        <div id="regTab" tabindex="0" role="tab" class="rgt brb" aria-expanded="false"><span class="sp spr pl" id="rar"></span><span class="ml51 tx">Register</span></div>
+                     </a>
+                     <span class="clb"></span>
+                  </div>
+                  <div>
+                     <div>
+                        <span>
+                           <form class="mgn20">
+                              <div>
+                                 <div id="l2_head" class="disTxt"></div>
+                                 
+                                 <div id="formDiv">
+                                    <div id="pri_signin">
+                                       <div><span><span class="sd-err" id="errf" tabindex="-1" ng-bind="username"></span></span></div>
+                                       <div></div>
+                                       
+                                       <div><span class="g-hdn" id="600301230LabelSpan"><label for="600301230">Email or username</label></span><span><input size="40" maxlength="64" name="600301230" id="600301230" type="text" autocapitalize="off" autocorrect="off" placeholder="Email or username" class="fld"            ng-model="email"></span></div>
+                                       <input name="runId2" type="hidden" value="AQABAAAAUAqErnroeok0FoGljjjQzy5LAs7U/DwTpgVjylVms39WDZlEKS2VTFlRvkRydAlNPpQFT+dStTJBljNkKJU/Twfc9Uc8FcRM5mdnGiCAVBbT">
+                                       <div class="m19"><span id="967320111LabelSpan" class="g-hdn"><label for="967320111">Password&nbsp;&nbsp;</label></span><span><input size="40" maxlength="64" name="967320111" id="967320111" type="password" autocapitalize="off" autocorrect="off" placeholder="Password" class="fld"         ng-model="password" ></span></div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                              <div style="margin:20px 0px 20px;"><input type="button" value="Sign in" class="btn ipb btn-prim sgnBtn" ng-click="submit();"></div>
+                              <div class="mt17" id="keepMeDiv1">
+                                 <div class="w360 km" id="keepMeDiv1">
+                                    <div class="m_otp6"><b><input type="checkbox" name="keepMeSignInOption2" value="1" id="signed_in2" class="hdn" checked="checked"><input type="hidden" value="1" name="keepMeSignInOption" id="signInKMSITextbox"><span class="cb spr kms cbn" tabindex="0" id="csi" aria-describedby="kmsiT" role="checkbox" title="Stay signed in" aria-checked="false"></span></b><span class="psm"><label for="signed_in">Stay signed in</label></span></div>
+                                    <div class="m_otp4 flrt" style="clear: right"><a id="otpanch" href="javascript:;" title="Sign in with a single use code">Forgot your password?</a></div>
+                                    <div style="clear: both" class="flrt"><span class="flrt sv"><a id="inflowfyp" href="https://scgi.ebay.com/ws/eBayISAPI.dll?FYPShow&amp;_trksid=p4853.m2379.l4061&amp;ru=http%3A%2F%2Fwww.ebay.com%2F"></a></span></div>
+                                 </div>
+                                 <div style="clear:both;" class="p_kmsi km" aria-live="polite" id="kmsitext1">
+                                    <span id="kmsiT">Using a public or shared device? Uncheck to protect your account.</span><a id="signinanch1" href="javascript:;" role="button" aria-expanded="false" aria-controls="hlp" title="More information about this checkbox" class="kmsi_lnk">Learn more</a>
+                                   
+                                 </div>
+                              </div>
+                              <div></div>
+                             
+                           </form>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+             
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    
+   </body>
+</html>

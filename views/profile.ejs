@@ -1,0 +1,174 @@
+<html>
+<head>
+ 
+  <title>My Account</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="javascript/signin.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="angularjs/angular_ebay.js"></script>
+  </head>
+<body ng-app="ebay" ng-controller="ebay" >
+<div class="container">
+
+        <div class="row">
+
+        <p type="text" id="adi"></p>
+
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/ebay-128.png">
+                    </td>
+                    <td width="100%">
+                        <input class="form-control" type="text"  placeholder="Search...">
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Search</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <div class="col-md-2">
+            <div>  
+            <img src="https://en.opensuse.org/images/0/0b/Icon-user.png" style="height: 150px ; width: 150px" />
+          </div> <a href="#" >My ebay</a></div>
+
+          <div class="col-md-10">
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="v3Pages_title">
+              <tbody>
+                <tr bgcolor="#9C9C9C">
+                  <td colspan="3"></td>
+                </tr>
+                <tr height="20" width="100%" bgcolor="#D6DEFF">
+                  <td align="left"></td>
+                  <td align="left" width="99%">
+                    <h3 class="B">
+                      Account Information
+                    </h3>
+                  </td>
+                  <td align="right"></td>
+                </tr>
+                <tr bgcolor="#ffffff" width="100%">
+                  <td colspan="3"></td>
+                </tr>
+                <tr bgcolor="#fed73b" width="100%">
+                  <td colspan="3"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tbody>
+                      <tr height="23">
+                        <td bgcolor="#f9f7ff">&nbsp;User name
+                        </td>
+                        <td ><%= userc %>                       
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr height="23">
+                        <td bgcolor="#f9f7ff" width="50%">&nbsp;Password
+                        </td>
+                        <td ><%= passc %></td>
+                        
+                      </tr>
+                      
+                      <tr height="23">
+                        <td width="50%" bgcolor="#f9f7ff">&nbsp;First name
+                        </td>
+                        <td ><%= fnamec %>
+                       </td>
+                
+                      </tr>
+                      
+                      <tr height="23">
+                        <td bgcolor="#f9f7ff" width="50%">&nbsp;Last name
+                        </td>
+                        <td ><%= lnamec %>  
+                        </td>
+                      </tr>
+
+                       <tr height="23">
+                        <td bgcolor="#f9f7ff" width="50%">&nbsp;Birthday
+                        </td>
+                        <td >08/09/1993  
+                        </td>
+                      </tr>
+
+                      <tr height="23">
+                        <td bgcolor="#f9f7ff" width="50%">&nbsp;zip
+                        </td>
+                        <td >95126 
+                        </td>
+                      </tr>
+    
+                      
+                        <td>
+                          
+    <br><button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow" ng-hide="true">Edit details</button>
+    
+    <div class="modal fade" id="popUpWindow">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Your information</h3>
+                </div>
+
+                <form ng-submit="updetails();">
+              
+                     <!-- body (form) -->
+                <div class="modal-body">
+                    
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="mail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="pass" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="namef" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="namel" placeholder="Last name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="bdate" placeholder="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="zip" placeholder="zip code">
+                        </div>
+                </div>
+
+                <!-- button -->
+                <div class="modal-footer">
+                    <input type="submit" value="confirm details"  class="btn btn-primary btn-block">
+
+                </div>
+               <!-- <button type="button" class="btn btn-success" ng-click="updetails();">Save details</button> -->
+              </form>
+            </div>
+        </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+    </div>
+</body>
+</html>

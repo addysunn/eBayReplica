@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en">
+   <head>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel='stylesheet' href='/stylesheets/signin.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+      <!-- <script src="angularjs/shopping.js"></script> -->
+      <!-- <script src="javascript/signin.js" type="text/javascript"></script> -->
+      <script src="angularjs/angular_ebay.js"></script>
+      <style type="text/css">
+         body #Body .btn, body #Body c-std {
+         filter:none;
+         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0079bc',endColorstr='#00509d')";
+         }
+      </style>
+      <meta name="viewport"/>
+      <meta name="layout" content="main" />
+      <!-- Use ?ForceSiteSpeedGauge=true for forcing -->
+      <title> Items | eBay </title>
+      
+      <!-- adding lens js -->
+      <link href="http://ir.ebaystatic.com/rs/v/04n3uyrglyyjlm5v4ojtvkhfoiu.css" type="text/css" rel="stylesheet">
+      <link href="http://ir.ebaystatic.com/rs/v/aan0jlbbw22ehi1gfw0klolfa23.css" type="text/css" rel="stylesheet">
+      <link href="http://ir.ebaystatic.com/rs/v/fqqfcktn0q1ptput2w4afjzlpuw.css" type="text/css" rel="stylesheet">
+      <style type="text/css">body .is.vi-ppc-main .mm-dp {
+         width:35%;
+         }
+         #vi-snippet-description-main.u-padB20 {
+         padding-top:10px;
+         float:left;
+         }
+         .vi-descsnpt-feedbacklnk {
+         position: relative;
+         top: -20px;
+         width: 500px;
+         margin-left: 250px;
+         }
+         .asqMain {
+         clear:both;
+         }
+         div#bsi-c {
+         clear: both;
+         }
+         .vi-pco-bboxtxt-Ins * {
+         font-weight: normal !important;
+         color: #0654ba !important;
+         }
+      </style>
+      <style type="text/css">
+         html a:link{
+         color: #0654ba;
+         }
+         ul#bc a:link{
+         color: #0654ba;
+         }
+         .mbg a:link{
+         color: #0654ba !important;
+         }
+         .mbg-l a:link{
+         color: #0654ba !important;
+         }
+         #Body .nav-tabs-m a:link{
+         color: #0654ba;
+         }
+      </style>
+   </head>
+   <script>
+      var id = GetURLParameter('id');
+      function GetURLParameter(sParam)
+      {
+       var sPageURL = window.location.search.substring(1);
+       var sURLVariables = sPageURL.split('&');
+       for (var i = 0; i < sURLVariables.length; i++) 
+       {
+           var sParameterName = sURLVariables[i].split('=');
+           if (sParameterName[0] == sParam) 
+           {
+               return sParameterName[1];
+           }
+       }
+      }
+      
+   </script>
+   <body>
+      <!-- Default filmstrip js used with main image -->
+      <!-- adding filmstrip js used in main pic and with images carousel  -->
+      <div id="Head">	
+      </div>
+      <div id="Body" class="sz940" itemscope="itemscope" ng-app="ebay" ng-controller="ebay_item" ng-init="getMember(id)">
+      <div id="TopPanelDF" style="margin: 0px 170px">
+         <div id="Top">
+            <div id="TopPanel">
+               <style>.gh-hide-if-nocss{display:none;}.gh-ar-hdn{color:#fff}</style>
+               <div class="gh-acc-exp-div gh-hide-if-nocss"><a id=gh-hdn-stm class=gh-acc-a href="#mainContent">Skip to main content</a></div>
+               <header id=gh role="banner" class="gh-flex gh-pre-js gh-w ">
+                  <table class="gh-tbl">
+                     <tbody>
+                        <tr>
+                           <td class="gh-td"><a href="http://www.ebay.com/" _sp="m570.l2586" id="gh-la">eBay<img role="presentation" width=250 height=200 style='clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0' alt="" src="http://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png" id="gh-logo"></a></td>
+                           <td class="gh-td">
+                              <div id=gh-shop class=gh-hide-if-nocss>
+                                 <button id=gh-shop-a aria-expanded="false" class=gh-control aria-controls=gh-sbc-o>Shop by category<i id="gh-shop-ei" class="gh-sprRetina"></i></button>
+                                 <div id=gh-sbc-o></div>
+                              </div>
+                           </td>
+                           <td class="gh-td-s">
+                              <form id="gh-f" method="get" action="http://www.ebay.com/sch/i.html">
+                                 <input type="hidden" value="R40" name="_from"><input type="hidden" name="_trksid" value="m570.l1313">
+                                 <table class="gh-tbl2">
+                                    <tbody>
+                                       <tr>
+                                          <td class="gh-td-s" >
+                                             <div id=gh-ac-box>
+                                                <div id=gh-ac-box2><label for=gh-ac class="gh-ar-hdn">Enter your search keyword</label><input type="text" class="gh-tb ui-autocomplete-input" size="50" maxlength="300" placeholder="Search..." id="gh-ac" name="_nkw" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"></div>
+                                             </div>
+                                          </td>
+                                          <td class="gh-td" id=gh-cat-td>
+                                             <div id=gh-cat-box>
+                                                <select title="Select a category for search" class="gh-sb gh-sprRetina" size=1 id=gh-cat name="_sacat">
+                                                   <option selected=selected value="0">All Categories</option>
+                                                </select>
+                                             </div>
+                                          </td>
+                                          <td class="gh-td" >
+                                          <td class="gh-td"><input type="submit" class="btn btn-prim gh-spr" id="gh-btn" value="Search"></td>
+                                          </td>
+                                          <td class="gh-td" id=gh-as-td><a title="Advanced Search" href="http://www.ebay.com/sch/ebayadvsearch" _sp=m570.l2614 id=gh-as-a>Advanced</a></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </form>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div id=gh-top class=gh-hide-if-nocss>
+                     <ul id="gh-topl">
+                        <li class="gh-t gh-spr" style="padding: 6px 5px"><span  class="gh-ug-guest" aria-expanded="false">Hi! <a href="/signin" style="color: blue"><%= fname%></a>&nbsp;<span id="gh-ug-flex"><%= or%> <a href="/register" style="color: blue"><%= register%></a></span></span></li>
+                        <li class="gh-t gh-spr " id="gh-p-1"><a href="http://deals.ebay.com/" _sp="m570.l3188" class="gh-p">Last login time: <%= last_logged%></a></li>
+                        <li class="gh-t gh-spr " id="gh-p-4"><a href="/logout" _sp="m570.l6463" class="gh-p">Logout</a></li>
+                        <li class="gh-t gh-spr " id="gh-p-2"><a href="/sell" class="gh-p">Sell</a></li>
+                        <li class="gh-t gh-spr " id="gh-p-3"><a href="http://ocs.ebay.com/ws/eBayISAPI.dll?CustomerSupport" _sp="m570.l1545" class="gh-p">Help &amp; Contact</a></li>
+                        <li class="gh-t gh-spr" id="gh-ti"></li>
+                     </ul>
+                     <ul id="gh-eb">
+                        <li id=gh-eb-My class="gh-eb-li gh-hvr gh-dd rt" data-imp=10>
+                           <div class="gh-menu">
+                              <a href="http://my.ebay.com/ws/eBayISAPI.dll?MyEbay&gbh=1" _sp=m570.l2919 class="gh-eb-li-a" >My eBay</a><a href="#gh-eb-My" role=button aria-expanded=false aria-controls=gh-eb-My-o class="gh-acc-exp-a gh-acc-a2 gh-control ">Expand My eBay</a>
+                              <div class="gh-submenu gh-eb-o" id="gh-eb-My-o">
+                                 <ul role=navigation>
+                                    <li ><a href="http://www.ebay.com/myb/Summary" _sp=m570.l1533 class="gh-eb-oa thrd" >Summary</a></li>
+                                    <li ><a href="http://www.ebay.com/myb/BidsOffers" _sp=m570.l1535 class="gh-eb-oa thrd" >Bids/Offers</a></li>
+                                    <li ><a href="http://www.ebay.com/myb/WatchList" _sp=m570.l1534 class="gh-eb-oa thrd" >Watch list</a></li>
+                                    <li ><a href="http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextListIndex&wl=1" _sp=m570.l3067 class="gh-eb-oa thrd" >Wish list</a></li>
+                                    <li ><a href="http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&amp;CurrentPage=MyeBayNextListIndex&amp;tagId=-100&amp;ssPageName=STRK:ME:LNLK:MESINDXX" _sp=m570.l2618 class="gh-eb-oa thrd" >All lists</a></li>
+                                    <li ><a href="http://www.ebay.com/myb/PurchaseHistory" _sp=m570.l1536 class="gh-eb-oa thrd" >Purchase history</a></li>
+                                    <li ><a href="http://my.ebay.com/ws/eBayISAPI.dll?MyEbay&amp;gbh=1&amp;CurrentPage=MyeBayAllSelling&amp;ssPageName=STRK:ME:LNLK:MESX" _sp=m570.l1537 class="gh-eb-oa thrd" >Selling</a></li>
+                                    <li ><a href="http://www.ebay.com/cln/_mycollections" _sp=m570.l4780 class="gh-eb-oa thrd" >My Collections</a></li>
+                                    <li ><a href="http://my.ebay.com/ws/eBayISAPI.dll?MyEbay&amp;gbh=1&amp;CurrentPage=MyeBayAllFavorites" _sp=m570.l1538 class="gh-eb-oa thrd" >Followed searches</a></li>
+                                    <li ><a href="http://mesg.ebay.com/mesgweb/ViewMessages/0" _sp=m570.l1539 class="gh-eb-oa thrd" >Messages</a></li>
+                                    <li id=gh-eb-sub-li-cpn ></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li id=gh-eb-Alerts class="gh-eb-li gh-hvr gh-layer rt" >
+                           <div class="gh-menu">
+                              <button class="gh-control ghn-b gh-eb-li-a" aria-expanded=false aria-controls=gh-eb-Alerts-o ><i id=gh-Alerts-i class=gh-sprRetina>Notification</i></button>
+                              <div class="gh-sublayer">
+                                 <div id="gh-eb-Alerts-o" class="gh-eb-o" style="display: none;"></div>
+                              </div>
+                           </div>
+                        </li>
+                        <li id=gh-cart class="gh-eb-li rt" ><a href="http://cart.payments.ebay.com/sc/view" _sp=m570.l2633 title="Your shopping cart" class="gh-eb-li-a" ><i id=gh-cart-i class=gh-sprRetina></i></a></li>
+                     </ul>
+                  </div>
+               </header>
+            </div>
+         </div>
+      </div>
+      <div id="CenterPanelDF">
+      <div id="CenterPanel"
+         class="  ebaylocale_en_US ebay_longlngsite   ">
+      <style>
+         /* PicturePanel */
+         #PicturePanel div.img {
+         border:1px solid #ccc;
+         background-color:white;
+         }
+         /* BuyBox */
+         .actPanel  {
+         border-top:1px solid #ccc;
+         border-left:1px solid #ccc;
+         border-right:1px solid #ccc;
+         }
+         .watchListCmp {
+         border-bottom:1px solid #ccc;
+         border-left:1px solid #ccc;
+         border-right:1px solid #ccc;
+         }
+      </style>
+      <h3 class="vi-inheritstyl">
+         <div class="tmpnl">
+            <div id="msgPanel" class="pnl u-dspn">
+               <div class="msg">
+                  <div class="msgPad" aria-relevant="all" aria-atomic="true" aria-live="assertive" >
+                     <span class="statusContent">
+                        <span class="statusLeftContent">
+                        <span id="w1-4-_msg" class="msgTextAlign" ></span>
+                        </span>
+                        <span class="statusRightContent">
+                        </span>
+                        <div style="clear: both;"></div>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div id="listingHistory"></div>
+            <div id="otherMsg"></div>
+         </div>
+      </h3>
+      <div id="vi_sme_prmts_bnr_cntr1" class="vi-sme-ss-v1">
+         <div id="promotionBanner" class="dli-mb12">
+         </div>
+      </div>
+      <div id="CenterPanelInternal" class="" style="margin: 70px 200px">
+      <div id="PicturePanel" class="pp-c">
+         
+         <div class="pp-ic pp-ic300" ><img src="./images/homepage.jpg" style="width: 280px; height: 280px">
+            
+         </div>
+      </div>
+      <div>
+         <!-- <input type="text" name="id" id="item_id"> -->
+         <div style="float: right;margin-right: 10px;margin-top: 20px">
+               <h3>
+                  <div class="u-flL lable">Seller Information</div>
+               </h3>
+               <br><br>
+               <!-- <div class="u-flL lable"> &nbsp;&nbsp;</div> -->
+               <b><div class="u-flL condText  "  id="vi-itm-cond" itemprop="itemCondition"><span ng-bind="fname" style="font-weight: 50"></span>&nbsp;<span ng-bind="lname"></span></div></b>&nbsp;shipping from&nbsp;<span ng-bind="city"></span>
+               <br><br>
+               
+               <br><br>
+            </div>
+         <h1  itemprop="name" id="itemTitle"><span class="g-hdn">Details about  &nbsp;</span><span ng-bind="item_name"></span></h1>
+         <div style="margin: 20px 10px">
+            <div class="u-flL lable">Item Name:&nbsp;&nbsp; </div>
+            <div class="u-flL condText  "  id="vi-itm-cond" itemprop="itemCondition"><span ng-bind="item_name"></span></div>
+            <br><br>
+            <div class="u-flL lable">Item Description:&nbsp;&nbsp; </div>
+            <div class="u-flL condText  "  id="vi-itm-cond" itemprop="itemCondition"><span ng-bind="item_desc"></span></div>
+            <br><br>
+            <div class="vi-bbox-dspn  u-flL lable ">Quantity:&nbsp;&nbsp;</div>
+            <div class="u-flL condText  "  id="vi-itm-cond" itemprop="itemCondition" style="color: red">
+               <input type="text" size="5" ng-model="cart_quantity" ng-change="checkq()">&nbsp;<span ng-bind="item_quantity" ></span> left in stock</label>
+            </div>
+            <br><br>
+            <div class="u-flL lable">price: <b>US $</b></div>
+            <div class="u-flL condText  "  id="vi-itm-cond" itemprop="itemCondition"><span ng-bind="item_price"></span></div>
+            <br>		
+            
+            <div class="u-flL">
+               <br><br>
+               <a  role="button"  _sp='p2047675.l1473' id="isCartBtn_btn" class="btn btn-scnd btn-m vi-VR-btnWdth-L" href="javascript:;" vib="vib" rel="nofollow" ng-click="item();">
+               Add to cart</a>
+            </div>
+         </div></div>
+         <!-- DO NOT change linkToTagId="rwid" as the catalog response has this ID set  -->
+      </div>
+   </body>
+</html>
